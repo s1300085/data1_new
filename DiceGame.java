@@ -1,10 +1,9 @@
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class DiceGame {
     public static void main(String[] args) {
-
-
 
         System.out.println("Rolling dice...");
 
@@ -18,7 +17,11 @@ public class DiceGame {
         int total = die1 + die2;
         System.out.println("Total value: " + total);
 
-        
+        if(total>7){
+            System.out.println("You won!");
+        }else{
+            System.out.println("You lost!");
+        }        
     }
 
 }
